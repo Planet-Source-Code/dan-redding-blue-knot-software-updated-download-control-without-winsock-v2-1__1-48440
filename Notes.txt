@@ -1,0 +1,28 @@
+bkDownload control 
+2003 Dan Redding - Blue Knot Software
+No winsock or other control library required
+w/ Demo Test form
+
+Possible uses:
+- Have program check for updates over net
+- Get changeable content (news/blogs/tips/ads/etc)
+- Retrieve customized batch files
+
+Original idea for using the AsyncRead functions to D/L files by 'Chloe'
+http://www.planet-source-code.com/vb/scripts/ShowCode.asp?txtCodeId=44135&lngWId=1
+
+Though the same methods for downloading are used, this version was written 
+from scratch and differs from the above as follows:
++ Downloads can be canceled 
++ It is a visible control that can act as a progress bar
++ Events and properties for additional information
++ Option to wait for DL to complete
++ Smart file naming given just a path (not neccessary to change for each file),
+  and the File or Redirect URL
++ Options to Fail or Rename if redirected
+- One DL at a time (though as you see in the demo project, multiple asynchronous 
+  downloads are still possible w/ an array of the control)
+
+Browse for folder routines in the demo project by MrBobo - Go get the complete original!
+http://www.planet-source-code.com/vb/scripts/ShowCode.asp?txtCodeId=22192&lngWId=1
+
